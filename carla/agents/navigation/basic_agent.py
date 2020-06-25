@@ -133,7 +133,7 @@ class BasicAgent(Agent):
         if obstacle_slow or tl_slow and not obstacle_brake and not tl_brake:
             control = carla.VehicleControl()
             control.throttle=0.2
-            control.brake=0.1
+            control.brake=0.1  
 
         return control
 

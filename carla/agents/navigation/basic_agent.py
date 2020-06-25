@@ -129,7 +129,7 @@ class BasicAgent(Agent):
         # if "GREEN" in strLight or "NONE" in strLight and not obstacle_brake:
             # control.throttle=0.25        
             
-        #SLOW DOWN: if there is an obstacle in the lane (for 6 frames)
+        #SLOW DOWN: if there is an obstacle in the lane (for 6 frames).
         if obstacle_slow or tl_slow and not obstacle_brake and not tl_brake:
             control = carla.VehicleControl()
             control.throttle=0.2
